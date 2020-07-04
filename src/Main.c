@@ -6,9 +6,19 @@
 
 int main() {
 
-    Coordinate test;
-    new_coordinate(&test, 1, 2);
-    print_coord(&test);
+    Quadratic t;
+    Coordinate a;
+    Coordinate b;
+    Coordinate c;
+
+    new_coordinate(&a, 0, 0);
+    new_coordinate(&b, 1, 1);
+    new_coordinate(&c, -1, 1);
+
+
+    new_quadratic(&t, &a, &b, &c);
+
+    print(&t);
 
     return 0;
 }
