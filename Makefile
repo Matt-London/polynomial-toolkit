@@ -1,5 +1,5 @@
 Main: buildAlert folderDepend build/Main.o build/Quadratic.o build/Coordinate.o
-	gcc build/* -o bin/Main
+	gcc build/* -o bin/Main -lm
 
 build/Main.o: src/Main.c
 	gcc -c src/Main.c -o build/Main.o
